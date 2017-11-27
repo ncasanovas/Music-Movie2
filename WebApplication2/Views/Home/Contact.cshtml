@@ -11,7 +11,21 @@
     425.555.0100
 </address>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<form action="@Url.Action("RecibirContacto", "Home")" method="post">
+         <div class="form-group">
+            <label for="nombre">Nombre: </label>
+            <input name="nombre" class="form-control" type="text" placeholder="Ingresá tu nombre..." required>
+         </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input name="mail" class="form-control"  aria-describedby="emailHelp" placeholder="Ingresá tu email" required>
+            
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje: </label>
+            <textarea name="mensaje" class="form-control" rows="3" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
