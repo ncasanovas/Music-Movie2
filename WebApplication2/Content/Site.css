@@ -16,36 +16,22 @@ li {
     font-family: 'Comfortaa', cursive;
 }
 
- 
+
 
 #alegre {
-    position: absolute;
-    margin: 100px auto;
-    left: 15em;
-    
+    text-align: center;
 }
 
 #apasionado {
-    position: absolute;
-    margin: 100px auto;
-    left: 35em;
-    
+    text-align:center;    
 }
 
 #depresivo {
-    position: absolute;
-    margin: 100px auto;
-    left: 15em;
-    top: 20em;
-    
+    text-align: center;
 }
 
 #tranquilo {
-    position: absolute;
-    margin: 100px auto;
-    left: 35em;
-    top: 20em;
-    
+    text-align: center;
 }
 
  ul.menu {
