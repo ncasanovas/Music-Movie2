@@ -34,8 +34,10 @@ li {
     text-align: center;
 }
 
+ 
+
  ul.menu {
-    margin: 100px auto;
+    margin: 0px auto;
     padding: 0;
     position: relative;
     width: 20em;
