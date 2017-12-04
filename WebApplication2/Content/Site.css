@@ -12,6 +12,10 @@ a.navbar-brand {
     font-weight: bold;
 }
 
+h3 {
+    font-family: 'PT Sans', sans-serif;
+}
+
  li {
     font-family: 'Comfortaa', cursive;
 }

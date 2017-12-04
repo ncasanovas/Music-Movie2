@@ -149,6 +149,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="Controllers\SongsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -160,7 +162,12 @@
     <Compile Include="Migrations\201712040044587_Initial1.Designer.cs">
       <DependentUpon>201712040044587_Initial1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712042318334_Mood.cs" />
+    <Compile Include="Migrations\201712042318334_Mood.Designer.cs">
+      <DependentUpon>201712042318334_Mood.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Mood.cs" />
     <Compile Include="Models\MusicMovieContext.cs" />
     <Compile Include="Models\Song.cs" />
     <Compile Include="Models\Movie.cs" />
@@ -206,6 +213,16 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Gracias.cshtml" />
+    <Content Include="Views\Movies\Create.cshtml" />
+    <Content Include="Views\Movies\Delete.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Movies\Edit.cshtml" />
+    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Songs\Create.cshtml" />
+    <Content Include="Views\Songs\Delete.cshtml" />
+    <Content Include="Views\Songs\Details.cshtml" />
+    <Content Include="Views\Songs\Edit.cshtml" />
+    <Content Include="Views\Songs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -229,6 +246,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712040044587_Initial1.resx">
       <DependentUpon>201712040044587_Initial1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712042318334_Mood.resx">
+      <DependentUpon>201712042318334_Mood.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
