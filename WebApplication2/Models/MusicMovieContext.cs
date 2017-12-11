@@ -18,5 +18,7 @@ namespace WebApplication2.Models
         public DbSet<Song> Songs { get; set; }
 
         public DbSet<Movie> Movies { get; set; }
+
+        public DbSet<Mood> Moods { get; set; }
     }
 }

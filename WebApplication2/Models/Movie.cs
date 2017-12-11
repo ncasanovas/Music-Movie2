@@ -9,6 +9,7 @@ namespace WebApplication2.Models
 {
     public class Movie
     {
+
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
@@ -16,5 +17,7 @@ namespace WebApplication2.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public string Link { get; set; }
+        public int Mood_ID { get; set; }
+        public Mood Mood { get; set; }
     }
 }

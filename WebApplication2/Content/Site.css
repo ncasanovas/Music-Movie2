@@ -104,3 +104,24 @@ h3 {
             background: #90f;
             border-bottom-right-radius: 100%
         }
+
+
+        #movie {
+            height: 40%;
+            width: 40%;
+            position:relative;
+            margin-left:1em;
+
+        }
+
+        
+        #song {
+            height: 40%;
+            width: 40%;
+            position: relative;
+            margin-left: 1em;
+        }
+       
+        .modal-body{
+            text-align: center;
+        }

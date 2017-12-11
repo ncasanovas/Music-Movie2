@@ -149,28 +149,25 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MoodsController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="Controllers\SongsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712032250189_Initial.cs" />
-    <Compile Include="Migrations\201712032250189_Initial.Designer.cs">
-      <DependentUpon>201712032250189_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201712102200322_Initial.cs" />
+    <Compile Include="Migrations\201712102200322_Initial.Designer.cs">
+      <DependentUpon>201712102200322_Initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201712040044587_Initial1.cs" />
-    <Compile Include="Migrations\201712040044587_Initial1.Designer.cs">
-      <DependentUpon>201712040044587_Initial1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201712042318334_Mood.cs" />
-    <Compile Include="Migrations\201712042318334_Mood.Designer.cs">
-      <DependentUpon>201712042318334_Mood.cs</DependentUpon>
+    <Compile Include="Migrations\201712102313584_201712102200322_Initial.cs" />
+    <Compile Include="Migrations\201712102313584_201712102200322_Initial.Designer.cs">
+      <DependentUpon>201712102313584_201712102200322_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Mood.cs" />
+    <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\MusicMovieContext.cs" />
     <Compile Include="Models\Song.cs" />
-    <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -241,14 +238,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201712032250189_Initial.resx">
-      <DependentUpon>201712032250189_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712102200322_Initial.resx">
+      <DependentUpon>201712102200322_Initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712040044587_Initial1.resx">
-      <DependentUpon>201712040044587_Initial1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201712042318334_Mood.resx">
-      <DependentUpon>201712042318334_Mood.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201712102313584_201712102200322_Initial.resx">
+      <DependentUpon>201712102313584_201712102200322_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

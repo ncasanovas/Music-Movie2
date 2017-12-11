@@ -198,9 +198,6 @@ C:\Users\Administrador\Documents\Natalia\Music-Movie2\WebApplication2\obj\Debug\
 C:\Users\Administrador\Documents\Natalia\Music-Movie2\WebApplication2\obj\Debug\WebApplication2.csproj.CoreCompileInputs.cache
 C:\Users\Administrador\Documents\Natalia\Music-Movie2\WebApplication2\obj\Debug\WebApplication2.dll
 C:\Users\Administrador\Documents\Natalia\Music-Movie2\WebApplication2\obj\Debug\WebApplication2.pdb
-C:\Users\Administrador\Documents\Natalia\Music-Movie2\WebApplication2\obj\Debug\WebApplication2.Migrations.Initial.resources
-C:\Users\Administrador\Documents\Natalia\Music-Movie2\WebApplication2\obj\Debug\WebApplication2.csproj.GenerateResource.Cache
-C:\Users\Administrador\Documents\Natalia\Music-Movie2\WebApplication2\obj\Debug\WebApplication2.Migrations.Initial1.resources
 C:\Users\Administrador\Documents\Music-Movie2\WebApplication2\bin\ApplicationInsights.config
 C:\Users\Administrador\Documents\Music-Movie2\WebApplication2\bin\WebApplication2.dll.config
 C:\Users\Administrador\Documents\Music-Movie2\WebApplication2\bin\WebApplication2.dll
@@ -258,3 +255,6 @@ C:\Users\Administrador\Documents\Music-Movie2\WebApplication2\obj\Debug\WebAppli
 C:\Users\Administrador\Documents\Music-Movie2\WebApplication2\obj\Debug\WebApplication2.dll
 C:\Users\Administrador\Documents\Music-Movie2\WebApplication2\obj\Debug\WebApplication2.pdb
 C:\Users\Administrador\Documents\Music-Movie2\WebApplication2\obj\Debug\WebApplication2.Migrations.Mood.resources
+C:\Users\Administrador\Documents\Natalia\Music-Movie2\WebApplication2\obj\Debug\WebApplication2.Migrations.Initial.resources
+C:\Users\Administrador\Documents\Natalia\Music-Movie2\WebApplication2\obj\Debug\WebApplication2.csproj.GenerateResource.Cache
+C:\Users\Administrador\Documents\Natalia\Music-Movie2\WebApplication2\obj\Debug\WebApplication2.Migrations._201712102200322_Initial.resources

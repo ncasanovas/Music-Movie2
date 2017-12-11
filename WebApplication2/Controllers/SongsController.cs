@@ -21,7 +21,7 @@ namespace WebApplication2.Controllers
         }
 
         // GET: Songs/Details/5
-        public ActionResult Details(long? id)
+        public ActionResult Details(int? id)
         {
             if (id == null)
             {
@@ -46,7 +46,7 @@ namespace WebApplication2.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name,Artist,Link")] Song song)
+        public ActionResult Create([Bind(Include = "ID,Name,Artist,Link,Mood_ID")] Song song)
         {
             if (ModelState.IsValid)
             {
@@ -59,7 +59,7 @@ namespace WebApplication2.Controllers
         }
 
         // GET: Songs/Edit/5
-        public ActionResult Edit(long? id)
+        public ActionResult Edit(int? id)
         {
             if (id == null)
             {
@@ -78,7 +78,7 @@ namespace WebApplication2.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Name,Artist,Link")] Song song)
+        public ActionResult Edit([Bind(Include = "ID,Name,Artist,Link,Mood_ID")] Song song)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace WebApplication2.Controllers
         }
 
         // GET: Songs/Delete/5
-        public ActionResult Delete(long? id)
+        public ActionResult Delete(int? id)
         {
             if (id == null)
             {
@@ -107,7 +107,7 @@ namespace WebApplication2.Controllers
         // POST: Songs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(long id)
+        public ActionResult DeleteConfirmed(int id)
         {
             Song song = db.Songs.Find(id);
             db.Songs.Remove(song);

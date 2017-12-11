@@ -10,107 +10,107 @@ using WebApplication2.Models;
 
 namespace WebApplication2.Controllers
 {
-    public class MoviesController : Controller
+    public class MoodsController : Controller
     {
         private MusicMovieContext db = new MusicMovieContext();
 
-        // GET: Movies
+        // GET: Moods
         public ActionResult Index()
         {
-            return View(db.Movies.ToList());
+            return View(db.Moods.ToList());
         }
 
-        // GET: Movies/Details/5
+        // GET: Moods/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Movie movie = db.Movies.Find(id);
-            if (movie == null)
+            Mood mood = db.Moods.Find(id);
+            if (mood == null)
             {
                 return HttpNotFound();
             }
-            return View(movie);
+            return View(mood);
         }
 
-        // GET: Movies/Create
+        // GET: Moods/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Movies/Create
+        // POST: Moods/Create
         // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Name,Description,Link,Mood_ID")] Movie movie)
+        public ActionResult Create([Bind(Include = "ID,Moods")] Mood mood)
         {
             if (ModelState.IsValid)
             {
-                db.Movies.Add(movie);
+                db.Moods.Add(mood);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(movie);
+            return View(mood);
         }
 
-        // GET: Movies/Edit/5
+        // GET: Moods/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Movie movie = db.Movies.Find(id);
-            if (movie == null)
+            Mood mood = db.Moods.Find(id);
+            if (mood == null)
             {
                 return HttpNotFound();
             }
-            return View(movie);
+            return View(mood);
         }
 
-        // POST: Movies/Edit/5
+        // POST: Moods/Edit/5
         // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Name,Description,Link,Mood_ID")] Movie movie)
+        public ActionResult Edit([Bind(Include = "ID,Moods")] Mood mood)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(movie).State = EntityState.Modified;
+                db.Entry(mood).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(movie);
+            return View(mood);
         }
 
-        // GET: Movies/Delete/5
+        // GET: Moods/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Movie movie = db.Movies.Find(id);
-            if (movie == null)
+            Mood mood = db.Moods.Find(id);
+            if (mood == null)
             {
                 return HttpNotFound();
             }
-            return View(movie);
+            return View(mood);
         }
 
-        // POST: Movies/Delete/5
+        // POST: Moods/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Movie movie = db.Movies.Find(id);
-            db.Movies.Remove(movie);
+            Mood mood = db.Moods.Find(id);
+            db.Moods.Remove(mood);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
