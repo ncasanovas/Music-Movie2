@@ -17,6 +17,11 @@ namespace WebApplication2.Controllers
         // GET: Movies
         public ActionResult Index()
         {
+            //preguntamos si está logueado 
+            //(porque en el login agregamos el objeto del usuario)
+            if (Session["LoggedUser"] == null)
+                return RedirectToAction("Login", "Users");
+
             return View(db.Movies.ToList());
         }
 
@@ -38,6 +43,10 @@ namespace WebApplication2.Controllers
         // GET: Movies/Create
         public ActionResult Create()
         {
+            //vamos a buscar los géneros a la base de datos
+            List<Mood> moodList = db.Moods.ToList();
+            //se lo pasamos a la vista, para que los itere y los ponga en un select
+            ViewBag.Moods = moodList;
             return View();
         }
 

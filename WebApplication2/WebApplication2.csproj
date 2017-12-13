@@ -152,6 +152,7 @@
     <Compile Include="Controllers\MoodsController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="Controllers\SongsController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -159,11 +160,16 @@
     <Compile Include="Migrations\201712120008540_Initial.Designer.cs">
       <DependentUpon>201712120008540_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712122305439_Users.cs" />
+    <Compile Include="Migrations\201712122305439_Users.Designer.cs">
+      <DependentUpon>201712122305439_Users.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Mood.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\MusicMovieContext.cs" />
     <Compile Include="Models\Song.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -218,6 +224,8 @@
     <Content Include="Views\Songs\Details.cshtml" />
     <Content Include="Views\Songs\Edit.cshtml" />
     <Content Include="Views\Songs\Index.cshtml" />
+    <Content Include="Views\Users\Login.cshtml" />
+    <Content Include="Views\Users\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -238,6 +246,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201712120008540_Initial.resx">
       <DependentUpon>201712120008540_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712122305439_Users.resx">
+      <DependentUpon>201712122305439_Users.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
