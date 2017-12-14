@@ -1,8 +1,16 @@
-﻿@model IEnumerable<WebApplication2.Models.Song>
+﻿@using WebApplication2.Models;
+@model IEnumerable<WebApplication2.Models.Song>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
+
 
 @{
     ViewBag.Title = "Index";
 }
+
+
 
 <h2>Index</h2>
 
@@ -34,7 +42,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.Artist)
         </td>
-        <td>
+        <td><div data-video="@item.Link" data-autoplay="0" data-loop="1" id="youtube-audio"></div>
             @Html.DisplayFor(modelItem => item.Link)
         </td>
         <td>
@@ -49,3 +57,9 @@
 }
 
 </table>
+
+
+
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>

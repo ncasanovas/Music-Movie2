@@ -26,6 +26,12 @@ namespace WebApplication2.Controllers
             return View();
         }
 
+        public ActionResult Menu()
+        {
+            return View();
+        }
+
+
         /// <summary>
         /// Recibimos los datos del formulario de login y
         /// validamos que exista el usuario y coincida la contraseña.

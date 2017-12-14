@@ -16,7 +16,8 @@ namespace WebApplication2.Controllers
 
         // GET: Movies
         public ActionResult Index()
-        {
+        {                
+
             //preguntamos si está logueado 
             //(porque en el login agregamos el objeto del usuario)
             if (Session["LoggedUser"] == null)

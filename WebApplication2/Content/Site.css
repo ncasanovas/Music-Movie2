@@ -125,3 +125,14 @@ h3 {
         .modal-body{
             text-align: center;
         }
+
+
+        th {
+            background-color: #DCDCDC;
+           
+        }
+
+        td {
+            background-color: #7FFFD4;
+           
+        }
