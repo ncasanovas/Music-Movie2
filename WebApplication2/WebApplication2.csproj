@@ -148,9 +148,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HappyController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MelancholicController.cs" />
     <Compile Include="Controllers\MoodsController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="Controllers\PassionateController.cs" />
+    <Compile Include="Controllers\PeacefulController.cs" />
     <Compile Include="Controllers\RandomMovieController.cs" />
     <Compile Include="Controllers\SongsController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
@@ -228,7 +232,12 @@
     <Content Include="Views\Users\Login.cshtml" />
     <Content Include="Views\Users\Register.cshtml" />
     <Content Include="Views\Users\Menu.cshtml" />
-    <Content Include="Views\RandomMovie\Movie.cshtml" />
+    <Content Include="Views\RandomMovie\Melancholic.cshtml" />
+    <Content Include="Views\MoviesMelancholic\Melancholic.cshtml" />
+    <Content Include="Views\Melancholic\Choose.cshtml" />
+    <Content Include="Views\Happy\Choose.cshtml" />
+    <Content Include="Views\Passionate\Choose.cshtml" />
+    <Content Include="Views\Peaceful\Choose.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

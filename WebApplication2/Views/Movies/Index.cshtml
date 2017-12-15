@@ -13,16 +13,16 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            <h3> @Html.DisplayNameFor(model => model.Name)</h3>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Description)
+            <h3>  @Html.DisplayNameFor(model => model.Description)</h3>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Link)
+            <h3>  @Html.DisplayNameFor(model => model.Link)</h3>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Mood_ID)
+            <h3>  @Html.DisplayNameFor(model => model.Mood_ID)</h3>
         </th>
         <th></th>
     </tr>
@@ -31,7 +31,7 @@
     
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Name)
+            <b> @Html.DisplayFor(modelItem => item.Name)</b>
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Description)
@@ -53,6 +53,8 @@
 
 </table>
 
-
+<div>
+    <button class="btn btn-default" onclick="location.href='/Users/Menu'">Return to Menu</button>
+</div>
 
 

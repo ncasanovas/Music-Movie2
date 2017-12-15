@@ -17,11 +17,44 @@ namespace WebApplication2.Controllers
         private MusicMovieContext db = new MusicMovieContext();
 
         // GET: RandomMovie
-        public ActionResult Movie()
+        public ActionResult Happy()
         {
 
-            string sql = "SELECT * FROM Movies ORDER BY rnd()";
-            return View(sql);
+            
+
+
+            return View();
+
+
+        }
+        public ActionResult Passionate()
+        {
+
+            
+
+
+            return View();
+
+
+        }
+        public ActionResult Melancholic()
+        {
+
+           
+
+
+            return View();
+
+
+        }
+        public ActionResult Peaceful()
+        {
+            
+
+
+            return View();
+
+            
         }
     }
 }

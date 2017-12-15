@@ -20,30 +20,32 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            <h3>@Html.DisplayNameFor(model => model.Name)</h3>
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Artist)
-        </th>
+            <h3> @Html.DisplayNameFor(model => model.Artist)</h3>
+</th>
         <th>
-            @Html.DisplayNameFor(model => model.Link)
-        </th>
+            <h3>  @Html.DisplayNameFor(model => model.Link)</h3>
+</th>
         <th>
-            @Html.DisplayNameFor(model => model.Mood_ID)
-        </th>
+            <h3> @Html.DisplayNameFor(model => model.Mood_ID)</h3>
+</th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
+            <b> @Html.DisplayFor(modelItem => item.Name)</b>
+</td>
         <td>
-            @Html.DisplayFor(modelItem => item.Artist)
-        </td>
-        <td><div data-video="@item.Link" data-autoplay="0" data-loop="1" id="youtube-audio"></div>
-            @Html.DisplayFor(modelItem => item.Link)
+            <b>  @Html.DisplayFor(modelItem => item.Artist)</b>
+</td>
+        <td>
+            <iframe title="YouTube video player" width="425" height="25" src="http://www.youtube.com/embed/@item.Link" frameborder="0" allowfullscreen></iframe>
+
+           
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Mood_ID)
@@ -58,6 +60,10 @@
 
 </table>
 
+
+<div>
+    <button class="btn btn-default" onclick="location.href='/Users/Menu'">Return to Menu</button>
+</div>
 
 
 <script src="https://www.youtube.com/iframe_api"></script>

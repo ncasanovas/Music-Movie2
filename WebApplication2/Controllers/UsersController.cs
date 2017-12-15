@@ -48,7 +48,7 @@ namespace WebApplication2.Controllers
                 && user.Password.Equals(password)) //si existe (no queda null) y la contraseña coincide
             {
                 Session["LoggedUser"] = user; //agregamos el objeto usuario a la sesión, para después tener control sobre él
-                return RedirectToAction("Index", "Movies");
+                return RedirectToAction("Menu", "Users");
             }
             //si no existe el usuario o lo contraseña no coincide
             return RedirectToAction("Login", "Users");
