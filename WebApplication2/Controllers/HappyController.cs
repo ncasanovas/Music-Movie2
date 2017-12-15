@@ -16,7 +16,7 @@ namespace WebApplication2.Controllers
         // GET: Happy
         public ActionResult Choose()
         {
-            return View();
+            return View(db.Movies.ToList());
         }
     }
 }

@@ -17,42 +17,42 @@ namespace WebApplication2.Controllers
         private MusicMovieContext db = new MusicMovieContext();
 
         // GET: RandomMovie
-        public ActionResult Happy()
+        public ActionResult RandomHappy()
         {
 
             
 
 
-            return View();
+            return View(db.Movies.FirstOrDefault(m => m.Mood_ID == 1));
 
 
         }
-        public ActionResult Passionate()
+        public ActionResult RandomPassionate()
         {
 
             
 
-
-            return View();
+            
+            return View(db.Movies.FirstOrDefault(m => m.Mood_ID == 2));
 
 
         }
-        public ActionResult Melancholic()
+        public ActionResult RandomMelancholic()
         {
 
-           
 
 
-            return View();
+
+            return View(db.Movies.FirstOrDefault(m => m.Mood_ID == 3));
 
 
         }
-        public ActionResult Peaceful()
+        public ActionResult RandomPeaceful()
         {
             
 
 
-            return View();
+            return View(db.Movies.FirstOrDefault(m => m.Mood_ID == 4));
 
             
         }

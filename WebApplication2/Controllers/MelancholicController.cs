@@ -17,9 +17,7 @@ namespace WebApplication2.Controllers
         // GET: Melancholic
         public ActionResult Choose()
         {
-            List<Mood> moodList = db.Moods.ToList();
             
-            ViewBag.Moods = moodList;
 
             return View(db.Movies.ToList());
             

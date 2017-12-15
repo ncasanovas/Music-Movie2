@@ -17,7 +17,7 @@ namespace WebApplication2.Controllers
         // GET: Passionate
         public ActionResult Choose()
         {
-            return View();
+            return View(db.Movies.ToList());
         }
     }
 }

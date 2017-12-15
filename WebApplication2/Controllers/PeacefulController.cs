@@ -17,7 +17,7 @@ namespace WebApplication2.Controllers
         // GET: Peaceful
         public ActionResult Choose()
         {
-            return View();
+            return View(db.Movies.ToList());
         }
     }
 }

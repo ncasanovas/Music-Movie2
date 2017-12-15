@@ -256,3 +256,4 @@ C:\Users\Administrador\Documents\Natalia\Music-Movie2\WebApplication2\obj\Debug\
 C:\Users\Administrador\Documents\Music-Movie2\WebApplication2\obj\Debug\WebApplication2.Migrations.Initial.resources
 C:\Users\Administrador\Documents\Music-Movie2\WebApplication2\obj\Debug\WebApplication2.csproj.GenerateResource.Cache
 C:\Users\Administrador\Documents\Natalia\Music-Movie2\WebApplication2\obj\Debug\WebApplication2.Migrations.Users.resources
+C:\Users\Administrador\Documents\Music-Movie2\WebApplication2\obj\Debug\WebApplication2.Migrations.Users.resources
