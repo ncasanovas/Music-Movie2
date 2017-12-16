@@ -23,7 +23,7 @@ namespace WebApplication2.Controllers
             
 
 
-            return View(db.Movies.FirstOrDefault(m => m.Mood_ID == 1));
+            return View(db.Movies.OrderBy(c => Guid.NewGuid()).FirstOrDefault(m => m.Mood_ID == 1));
 
 
         }
@@ -33,7 +33,7 @@ namespace WebApplication2.Controllers
             
 
             
-            return View(db.Movies.FirstOrDefault(m => m.Mood_ID == 2));
+            return View(db.Movies.OrderBy(c => Guid.NewGuid()).FirstOrDefault(m => m.Mood_ID == 2));
 
 
         }
@@ -43,7 +43,7 @@ namespace WebApplication2.Controllers
 
 
 
-            return View(db.Movies.FirstOrDefault(m => m.Mood_ID == 3));
+            return View(db.Movies.OrderBy(c => Guid.NewGuid()).FirstOrDefault(m => m.Mood_ID == 3));
 
 
         }
@@ -52,9 +52,9 @@ namespace WebApplication2.Controllers
             
 
 
-            return View(db.Movies.FirstOrDefault(m => m.Mood_ID == 4));
+            return View(db.Movies.OrderBy(c => Guid.NewGuid()).FirstOrDefault(m => m.Mood_ID == 4));
 
-            
+
         }
     }
 }
