@@ -156,6 +156,7 @@
     <Compile Include="Controllers\PassionateController.cs" />
     <Compile Include="Controllers\PeacefulController.cs" />
     <Compile Include="Controllers\RandomMovieController.cs" />
+    <Compile Include="Controllers\RandomSongController.cs" />
     <Compile Include="Controllers\SongsController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
@@ -240,6 +241,10 @@
     <Content Include="Views\RandomMovie\RandomHappy.cshtml" />
     <Content Include="Views\RandomMovie\RandomPassionate.cshtml" />
     <Content Include="Views\RandomMovie\RandomPeaceful.cshtml" />
+    <Content Include="Views\RandomSong\RandomHappy.cshtml" />
+    <Content Include="Views\RandomSong\RandomMelancholic.cshtml" />
+    <Content Include="Views\RandomSong\RandomPassionate.cshtml" />
+    <Content Include="Views\RandomSong\RandomPeaceful.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

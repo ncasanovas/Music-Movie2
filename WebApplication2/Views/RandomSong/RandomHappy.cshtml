@@ -1,0 +1,40 @@
+﻿@using WebApplication2.Models;
+@model WebApplication2.Models.Song
+
+@{
+    ViewBag.Title = "RandomHappy";
+}
+
+<h2>Random Happy Song</h2>
+
+
+
+
+<div class="containerHappy">
+
+    <div class="row">
+        <div class="col-md-12">
+            <b> @Html.DisplayFor(modelItem => Model.Name)</b>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            @Html.DisplayFor(modelItem => Model.Artist)
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <iframe title="YouTube video player" width="425" height="25" src="http://www.youtube.com/embed/@Model.Link" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</div>
+
+
+<br />
+
+<div>
+    <button class="btn btn-default" onclick="location.href='/'">Return to Index</button>
+</div>

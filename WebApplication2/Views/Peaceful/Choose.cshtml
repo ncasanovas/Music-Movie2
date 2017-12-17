@@ -3,11 +3,14 @@
     ViewBag.Title = "Choose";
 }
 
-<h2>Choose</h2>
-
+<h2>Choose a Movie or a Song</h2>
+<br />
+<br />
 <div class="row">
-    <button class="btn btn-default" onclick="location.href='/RandomMovie/RandomPeaceful'"><img id="movie" src="~/Content/Imagenes/clapperboard.png"/></button>
-</div>
-<div class="row">
-    <button class="btn btn-default"><img id="song" src="~/Content/Imagenes/headphones.png" /></button>
+    <div class="col-md-6">
+        <button class="btn btn-default" onclick="location.href='/RandomMovie/RandomPeaceful'"><img id="movie" src="~/Content/Imagenes/clapperboard.png" /></button>
+    </div>
+    <div class="col-md-6">
+        <button class="btn btn-default" onclick="location.href='/RandomSong/RandomPeaceful'"><img id="song" src="~/Content/Imagenes/headphones.png" /></button>
+    </div>
 </div>
