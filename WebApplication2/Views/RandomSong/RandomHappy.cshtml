@@ -14,13 +14,13 @@
 
     <div class="row">
         <div class="col-md-12">
-            <b> @Html.DisplayFor(modelItem => Model.Name)</b>
+            <h4><b> @Html.DisplayFor(modelItem => Model.Name)</b></h4>
         </div>
     </div>
     <br>
     <div class="row">
         <div class="col-md-12">
-            @Html.DisplayFor(modelItem => Model.Artist)
+            <h5><b>@Html.DisplayFor(modelItem => Model.Artist)</b></h5>
         </div>
     </div>
     <br>
@@ -35,6 +35,17 @@
 
 <br />
 
-<div>
-    <button class="btn btn-default" onclick="location.href='/'">Return to Index</button>
-</div>
+<ul class="nav navbar-nav navbar-left">
+
+    <li>
+        <button class="btn btn-default" onclick="location.href='/Happy/Choose'">Return to Happy</button>
+    </li>
+
+
+
+    <li>
+        <button class="btn btn-default" onclick="location.href='/'">Return to Index</button>
+    </li>
+
+
+</ul>

@@ -13,7 +13,7 @@
        
        <div class="row">
            <div class="col-md-12">
-               <b> @Html.DisplayFor(modelItem => Model.Name)</b>
+               <h4><b> @Html.DisplayFor(modelItem => Model.Name)</b></h4>
            </div>
        </div>
        <br>
@@ -34,6 +34,17 @@
 
     <br />
 
-    <div>
+    <ul class="nav navbar-nav navbar-left">
+
+    <li>
+        <button class="btn btn-default" onclick="location.href='/Peaceful/Choose'">Return to Peaceful</button>
+    </li>
+
+
+
+    <li>
         <button class="btn btn-default" onclick="location.href='/'">Return to Index</button>
-    </div>
+    </li>
+
+
+</ul>
