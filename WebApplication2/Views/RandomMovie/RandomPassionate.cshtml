@@ -5,45 +5,34 @@
     ViewBag.Title = "RandomPassionate";
 }
 
-<h2>Random Passionate</h2>
+<h2>Random Passionate Movie</h2>
 
 
-<table class="table">
-    <tr>
-        <th>
-            <h3> @Html.DisplayNameFor(model => model.Name)</h3>
-        </th>
-        <th>
-            <h3>  @Html.DisplayNameFor(model => model.Description)</h3>
-        </th>
-        <th>
-            <h3>  @Html.DisplayNameFor(model => model.Link)</h3>
-        </th>
-        <th>
-            <h3>  @Html.DisplayNameFor(model => model.Mood_ID)</h3>
-        </th>
-        <th></th>
-    </tr>
+<div class="containerPassionate">
 
-
-
-    <tr>
-        <td>
+    <div class="row">
+        <div class="col-md-12">
             <b> @Html.DisplayFor(modelItem => Model.Name)</b>
-        </td>
-        <td>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
             @Html.DisplayFor(modelItem => Model.Description)
-        </td>
-        <td>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/@Model.Link" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
 
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => Model.Mood_ID)
-        </td>
-
-
-    </tr>
+</div>
 
 
-</table>
+<br />
+
+<div>
+    <button class="btn btn-default" onclick="location.href='/'">Return to Index</button>
+</div>

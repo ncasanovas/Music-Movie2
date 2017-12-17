@@ -26,6 +26,7 @@ namespace WebApplication2.Controllers
             return View(db.Movies.OrderBy(c => Guid.NewGuid()).FirstOrDefault(m => m.Mood_ID == 1));
 
 
+
         }
         public ActionResult RandomPassionate()
         {
