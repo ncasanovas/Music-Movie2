@@ -57,7 +57,7 @@ namespace WebApplication2.Controllers
         [HttpGet]
         public ActionResult Register(string mail, string password)
        {
-            User user = db.Users.FirstOrDefault(u => u.Mail.Equals(""));
+            
             if (mail != null && password != null) //si existe (no queda null) y la contraseña coincide
             {
                 db.Users.Add(mail);
