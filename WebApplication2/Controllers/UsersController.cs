@@ -54,18 +54,18 @@ namespace WebApplication2.Controllers
             return RedirectToAction("Login", "Users");
         }
 
-        [HttpGet]
-        public ActionResult Register(string mail, string password)
-       {
-            
-            if (mail != null && password != null) //si existe (no queda null) y la contraseña coincide
-            {
-                db.Users.Add(mail);
-                db.Users.Add(password);
-                Session["RegisterUser"] = user; //agregamos el objeto usuario a la sesión, para después tener control sobre él
-                
-            }
-            return RedirectToAction("HistorialMovies", "HistorialMovies");
-        }
+        //  [HttpGet]
+        //  public ActionResult Register(string mail, string password)
+        // {
+       
+       //     if (mail.Equals("") && password.Equals(""))
+       //     {
+       //        db.Users.Add(mail);
+       //         db.Users.Add(password);
+       //        Session["RegisterUser"] = user; //agregamos el objeto usuario a la sesión, para después tener control sobre él
+
+        //    }
+        //    return RedirectToAction("Login", "Users");
+        // }
     }
 }

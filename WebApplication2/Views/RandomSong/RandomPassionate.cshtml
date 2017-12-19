@@ -24,7 +24,12 @@
     <br>
     <div class="row">
         <div class="col-md-12">
-            <iframe title="YouTube video player" width="425" height="25" src="http://www.youtube.com/embed/@Model.Link" frameborder="0" allowfullscreen></iframe>
+            <div data-video="@Model.Link"
+                 data-autoplay="0"
+                 data-loop="1"
+                 id="youtube-audio">
+
+            </div>
         </div>
     </div>
 
@@ -47,3 +52,7 @@
 
 
 </ul>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>

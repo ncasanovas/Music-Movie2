@@ -1,82 +1,82 @@
-﻿body{
-    padding-top: 50px;
-}
+﻿        body{
+            padding-top: 50px;
+        }
 
-h1 {
-    font-family: 'Pacifico', cursive;
-    text-align: center;
-    font-size: 100px;
-}
+        h1 {
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            font-size: 100px;
+        }
 
-a.navbar-brand {
-    font-family: 'Comfortaa', cursive;
-    font-weight: bold;
-}
+        a.navbar-brand {
+            font-family: 'Comfortaa', cursive;
+            font-weight: bold;
+        }
 
-h3 {
-    font-family: 'PT Sans', sans-serif;
-}
+        h3 {
+            font-family: 'PT Sans', sans-serif;
+        }
 
-#subtitle{
-    text-align:center;
-}
+        #subtitle{
+            text-align:center;
+        }
 
- li {
-    font-family: 'Comfortaa', cursive;
-}
+         li {
+            font-family: 'Comfortaa', cursive;
+        }
 
-.sign-in {
-    float: right;
-    margin-top: 0.5em;
-    margin-right: 0.5em;
-}
-.register {
-    float: right;
-    margin-top: 0.5em;
-}
-#happy {
-    text-align: right;
-    padding-right: 2em;
-}
+        .sign-in {
+            float: right;
+            margin-top: 0.5em;
+            margin-right: 0.5em;
+        }
+        .register {
+            float: right;
+            margin-top: 0.5em;
+        }
+        #happy {
+            text-align: right;
+            padding-right: 2em;
+        }
 
-#passionate {
-    text-align:left; 
-    padding-left: 2em;
-}
+        #passionate {
+            text-align:left; 
+            padding-left: 2em;
+        }
 
-#melancholic {
-    text-align: right;
-    padding-right: 2em;
-}
+        #melancholic {
+            text-align: right;
+            padding-right: 2em;
+        }
 
-#peaceful {
-    text-align: left;
-    padding-left: 2em;
-}
+        #peaceful {
+            text-align: left;
+            padding-left: 2em;
+        }
 
  
 
- ul.menu {
-    margin: 0px auto;
-    padding: 0;
-    position: relative;
-    width: 20em;
-    height: 20em;
-    border-radius: 100%;
-}
+         ul.menu {
+            margin: 0px auto;
+            padding: 0;
+            position: relative;
+            width: 20em;
+            height: 20em;
+            border-radius: 100%;
+        }
 
-    ul.menu li {
-        position: absolute;
-        list-style: none;
-        width: 10em;
-        height: 10em;
-        text-align: center;
-        line-height: 9em;
-        /* opacity:0.5; */
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-    }
+        ul.menu li {
+            position: absolute;
+            list-style: none;
+            width: 10em;
+            height: 10em;
+            text-align: center;
+            line-height: 9em;
+            /* opacity:0.5; */
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
 
         ul li:hover {
             cursor: pointer;
@@ -132,13 +132,13 @@ h3 {
         }
 
 
-th {
-    background-color: #99bbff;
-}
+        th {
+            background-color: #99bbff;
+        }
 
-td {
-    background-color: #b3d9ff;
-}
+        td {
+            background-color: #b3d9ff;
+        }
 
         iframe {
             margin: auto;
@@ -172,4 +172,6 @@ td {
             padding: 10px;
             text-align: center;
         }
+
+
 
