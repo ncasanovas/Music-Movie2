@@ -8,6 +8,19 @@
             font-size: 100px;
         }
 
+        @media (max-width: 500px) {
+           h1 {
+                font-size: 60px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            button.btn.btn-default {
+                margin-left: 30px;
+            }
+        }
+
+
         a.navbar-brand {
             font-family: 'Comfortaa', cursive;
             font-weight: bold;
