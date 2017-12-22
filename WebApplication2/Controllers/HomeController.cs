@@ -67,7 +67,7 @@ namespace WebApplication2.Controllers
             //usamos el mismo objeto cliente smtp que creamos antes
             clienteSmtp.Send(mailAUsuario);
 
-            return View("Gracias");
+            return View("ThankYou");
         }
     }
 }
