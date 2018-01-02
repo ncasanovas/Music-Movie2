@@ -22,7 +22,8 @@ namespace WebApplication2.Controllers
             if (Session["LoggedUser"] == null)
                 return RedirectToAction("Login", "Users");
 
-            return View(db.Songs.ToList());
+            return View(db.Songs.OrderBy(i => i.Mood_ID).ToList());
+               
         }
 
                
